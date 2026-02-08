@@ -87,6 +87,7 @@ void test_add(const char *a, const char *b)
     
     char *c = add(a, b);
     printf("add(%s, \n   %s) = \n    %s\n", a, b, c);
+    free(c);
 }
 
 
@@ -97,5 +98,6 @@ void test_sub(const char *a, const char *b)
 
     char *c = sub(a, b);
     printf("sub(%s, \n    %s) = \n    %s\n", a, b, c);
+    free(c);
 }
 
